@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Ejercicio 7</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Ejercicio7.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="Ejercicio7.js"></script>
+	</head>	
+    <body>
+		<h1>
+			Prueba ocultar h1
+		</h1>
+		<input type="button" id="mostrarH1" value="Mostrar h1"	onclick="metodos.mostrarH1()"/>
+		<input type="button" id="ocultarH1" value="Ocultar h1"	onclick="metodos.ocultarH1()"/>
+
+		<h2>Santiago Fidalgo Salles</h2>
+		<input type="button" id="invertirNombre" value="Invertir nombre"	onclick="metodos.invertirNombre()"/>
+		<input type="button" id="ordenCorrecto" value="Orden correcto"	onclick="metodos.ordenCorrecto()"/>
+
+		<h3>Añadir nuevo elemento o eliminarlo:</h3>
+		<p id="p1"></p>
+		<input type="button" id="añadirElemento" value="Añadir elemento"	onclick="metodos.añadirPalabra()"/>
+		<input type="button" id="eliminarElemento" value="Eliminar elemento"	onclick="metodos.eliminarElemento()"/>
+		
+        <h4>Mostrar padres:</h4>
+		<input type="button" id="mostrarPadres" value="Mostrar padres"	onclick="metodos.mostrarPadres()"/>
+		<ul id="padres"></ul>
+		
+        <h5>Tabla de numeros:</h5>
+		<table id="tablaNotas">
+			<tr>
+				<th>
+					Número 1
+				</th>
+				<th>
+					Número 2
+				</th>
+			</tr>
+			<tr>
+				<td>
+					1
+				</td>
+				<td>
+					2
+				</td>
+			</tr>
+			<tr>
+				<td>
+					3
+				</td>
+				<td>
+					4
+				</td>
+			</tr>
+			<tr>
+				<td>
+					5
+				</td>
+				<td>
+					6
+				</td>	
+			</tr>
+			<tr>
+				<td>
+					7
+				</td>
+				<td>
+					8
+				</td>
+			</tr>
+			<tr>
+				<td>
+					9
+				</td>
+				<td>
+					10
+				</td>
+			</tr>
+		</table>
+		<p id="p2">Resultado suma de la tabla: </p>
+		<input type="button" id="calcularTotal" value="Calcular total de la tabla"	onclick="metodos.calcularTotal()"/>
+	</body>
+</html>

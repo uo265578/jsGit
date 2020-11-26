@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Calculadora RPN</title>
+		<meta name="description" content="Calculadora RPN html y js">
+		<meta name="author" content="Santiago Fidalgo Sallés">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="CalculadoraRPN.css"/>
+		<script src="CalculadoraRPN.js"></script>
+	</head>
+
+	<body>
+		<h1>Calculadora RPN</h1>
+		<main>
+			<input type="text" id="consola3" disabled=""/>
+            <input type="text" id="consola2" disabled=""/>
+            <input type="text" id="consola1" disabled=""/>
+            <input type="text" id="consola" disabled=""/>
+			
+			<input type="button" id="c" value="C" onclick="calculadora.borrarTodo()"/>
+            <input type="button" id="ac" value="AC" onclick="calculadora.botonAc()"/>
+            <input type="button" id="pop" value="POP" onclick="calculadora.botonPop()"/>
+            <input type="button" id="swap" value="SWAP" onclick="calculadora.botonSwap()"/>
+            <input type="button" id="porcent" value="%" onclick="calculadora.botonPorcent()"/>
+			
+			<input type="button" id="sqrt" value="SQRT" onclick="calculadora.raiz()"/>
+            <input type="button" id="pow" value="POW" onclick="calculadora.botonPow()"/>
+            <input type="button" id="inverso" value="1/X" onclick="calculadora.inverso()"/>
+            <input type="button" id="opuesto" value="+/-" onclick="calculadora.opuesto()"/>
+            <input type="button" id="div" value="/" onclick="calculadora.botonDivision()"/>
+			
+			<input type="button" id="m+" 	value="m+" onclick="calculadora.mSuma()"/>
+			<input type="button" id="siete" value="7" onclick="calculadora.numero7()"/>
+			<input type="button" id="ocho" 	value="8" onclick="calculadora.numero8()"/>
+			<input type="button" id="nueve" value="9" onclick="calculadora.numero9()"/>
+			<input type="button" id="mul" 	value="x" onclick="calculadora.botonMultiplicar()"/>
+			
+			<input type="button" id="m-" 	value="m-" onclick="calculadora.mResta()"/>
+			<input type="button" id="cuatro" value="4" onclick="calculadora.numero4()"/>
+			<input type="button" id="cinco" value="5" onclick="calculadora.numero5()"/>
+			<input type="button" id="seis" 	value="6" onclick="calculadora.numero6()"/>
+			<input type="button" id="sub" 	value="-" onclick="calculadora.botonResta()"/>
+			
+			<input type="button" id="mr" value="MR" onclick="calculadora.botonMr()"/>
+			<input type="button" id="uno" 	value="1" onclick="calculadora.numero1()"/>
+			<input type="button" id="dos" 	value="2" onclick="calculadora.numero2()"/>
+			<input type="button" id="tres" 	value="3" onclick="calculadora.numero3()"/>
+			<input type="button" id="sum" 	value="+" onclick="calculadora.botonSuma()"/>
+			
+			<input type="button" id="mc" class="uno" value="MC" onclick="calculadora.botonMc()"/>
+            <input type="button" id="cero" class="uno" value="0" onclick="calculadora.numero0"/>
+            <input type="button" id="decimal" class="uno" value="." onclick="calculadora.botonDec()"/>
+            <input type="button" id="enter" class="dos" value="ENTER" onclick="calculadora.calcular()"/>
+			
+		</main>
+	</body>
+</html>

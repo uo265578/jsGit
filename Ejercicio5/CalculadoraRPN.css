@@ -1,0 +1,51 @@
+main{
+  display:block;
+  margin:0 auto;
+  padding:20px;
+  background-color:grey;
+  width:275px;
+  height:500px;
+  border-radius: 25px;
+
+      
+  }
+  
+input[type=text]{
+    width: 70%;
+    height:0.5%;
+	padding: 16px 32px;
+	margin:8px 0;
+	text-align: right;
+	color: #000000;
+    background: #bfcde6;
+	font-size: 20px;
+}
+  
+input[type=button]{
+    height:45px;
+    width:50px;
+    background-color:#000000;
+	color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-size:14px;
+    min-width: 16px;
+    text-decoration: none;
+    
+}
+
+input[type=button]:hover{
+	background-color: #000000;
+	color: white;
+    font-size: 15px;
+    
+}
+
+input[type=button].uno{
+    min-width: 16%;
+}
+
+input[type=button].dos{
+    min-width: 38%;
+}
+   

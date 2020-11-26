@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+<menu>
+<numero>1</numero>
+<categoria>general</categoria>
+<entrante>Salpicón de marisco</entrante>
+<primer_plato>Bacalao al pil pil</primer_plato>
+<segundo_plato>Cabritu con patatinos</segundo_plato>
+<postre>Tarta de la abuela</postre>
+<bebida>Agua</bebida>
+<precio moneda="euros">19</precio>
+</menu>
+<menu>
+<numero>2</numero>
+<categoria>vegetariano</categoria>
+<entrante>Palitos de Tofu Buffalo</entrante>
+<primer_plato>Paella de verduras</primer_plato>
+<segundo_plato>Revuelto de verduras</segundo_plato>
+<postre>Helado de la casa</postre>
+<bebida>Vino o agua</bebida>
+<precio moneda="euros">16,5</precio>
+</menu>
+<menu>
+<numero>3</numero>
+<categoria>general</categoria>
+<entrante>Ensalada mixta</entrante>
+<primer_plato>Merluza a la bilbaina</primer_plato>
+<segundo_plato>Solomillo de buey</segundo_plato>
+<postre>Flan</postre>
+<bebida>Vino o agua</bebida>
+<precio moneda="euros">18</precio>
+</menu>
+<menu>
+<numero>4</numero>
+<categoria>vegano</categoria>
+<entrante>Barritas de cacahuete</entrante>
+<primer_plato>Chili vegano</primer_plato>
+<segundo_plato>Lasaña de salvia y calabaza</segundo_plato>
+<postre>Smoothie</postre>
+<bebida>Vino o agua</bebida>
+<precio moneda="euros">18,5</precio>
+</menu>
+<menu>
+<numero>5</numero>
+<categoria>infantil</categoria>
+<entrante>Fritos variados</entrante>
+<primer_plato>Sopa de marisco</primer_plato>
+<segundo_plato>Bistec de ternera</segundo_plato>
+<postre>Helado de chocolate</postre>
+<bebida>Agua o refresco</bebida>
+<precio moneda="euros">12</precio>
+</menu>
+</menus>
