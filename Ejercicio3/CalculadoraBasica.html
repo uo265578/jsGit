@@ -3,41 +3,44 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Calculadora básica</title>
+		<meta name="description" content="Calculadora básica. Ejercicio 3">
+		<meta name="keywords" content="calculadora,calculo,matematicas">
+		<meta name="author" content="Alejandro Antuña">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="CalculadoraBasica.css"/>
 		<script src="CalculadoraBasica.js"></script>
 	</head>
+
 	<body>
 		<h1>Calculadora básica</h1>
 		<main>
-			<input type="text" id="calculo" disabled=""/>
+			<input type="text" id="consola" disabled=""/>
 			
-			<input type="button" class="gris" id="botonMRC" value="MRC" onclick="calculadora.botonMrc()"/>
-			<input type="button" class="gris" id="botonM-" value="M-" onclick="calculadora.botonMSub()"/>
-			<input type="button" class="gris" id="botonM+" value="M+" onclick="calculadora.botonMSum()"/>
-			<input type="button" class="rojo" id="botonDiv" value="/" onclick="calculadora.botonDiv()"/>
+			<input type="button" id="mrc" 	value="MRC" onclick="calculadora.botonMemMostrar()"/>
+			<input type="button" id="m-" 	value="M-" onclick="calculadora.botonMemSub()"/>
+			<input type="button" id="m+" 	value="M+" onclick="calculadora.botonMemSum()"/>
+			<input type="button" id="div" 	value="/" onclick="calculadora.botonDiv()"/>
 			
-			<input type="button" id="boton7" value="7" onclick="calculadora.boton(7)"/>
-			<input type="button" id="boton8" value="8" onclick="calculadora.boton(8)"/>
-			<input type="button" id="boton9" value="9" onclick="calculadora.boton(9)"/>
-			<input type="button" class="rojo" id="botonMult" value="*" onclick="calculadora.botonMult()"/>
+			<input type="button" id="siete" value="7" onclick="calculadora.boton7()"/>
+			<input type="button" id="ocho" 	value="8" onclick="calculadora.boton8()"/>
+			<input type="button" id="nueve" value="9" onclick="calculadora.boton9()"/>
+			<input type="button" id="mul" 	value="x" onclick="calculadora.botonMul()"/>
 			
-			<input type="button" id="boton4" value="4" onclick="calculadora.boton(4)"/>
-			<input type="button" id="boton5" value="5" onclick="calculadora.boton(5)"/>
-			<input type="button" id="boton6" value="6" onclick="calculadora.boton(6)"/>
-			<input type="button" class="rojo" id="botonRest" value="-" onclick="calculadora.botonRest()"/>
+			<input type="button" id="cuatro" value="4" onclick="calculadora.boton4()"/>
+			<input type="button" id="cinco" value="5" onclick="calculadora.boton5()"/>
+			<input type="button" id="seis" 	value="6" onclick="calculadora.boton6()"/>
+			<input type="button" id="sub" 	value="-" onclick="calculadora.botonSub()"/>
 			
-			<input type="button" id="boton1" value="1" onclick="calculadora.boton(1)"/>
-			<input type="button" id="boton2" value="2" onclick="calculadora.boton(2)"/>
-			<input type="button" id="boton3" value="3" onclick="calculadora.boton(3)"/>
-			<input type="button" class="rojo" id="botonSum" value="+" onclick="calculadora.botonSum()"/>
+			<input type="button" id="uno" 	value="1" onclick="calculadora.boton1()"/>
+			<input type="button" id="dos" 	value="2" onclick="calculadora.boton2()"/>
+			<input type="button" id="tres" 	value="3" onclick="calculadora.boton3()"/>
+			<input type="button" id="sum" 	value="+" onclick="calculadora.botonSum()"/>
 			
-			<input type="button" id="boton0" value="0" onclick="calculadora.boton(0)"/>
-			<input type="button" id="botonDec" value="." onclick="calculadora.botonDec()"/>
-			<input type="button" id="botonC" value="C" onclick="calculadora.botonBorrar()"/>
-			<input type="button" id="botonIgual" value="=" onclick="calculadora.botonResultado()"/>
-			
-		
+			<input type="button" id="cero" 	value="0" onclick="calculadora.boton0()"/>
+			<input type="button" id="dec" 	value="." onclick="calculadora.botonDec()"/>
+			<input type="button" id="c" 	value="C" onclick="calculadora.resetear()"/>
+			<input type="button" id="equals" value="=" onclick="calculadora.calcular()"/>
+			<input type="button" id="ans" value="ANS" onclick="calculadora.botonAns()"/>
 		</main>
 	</body>
 </html>
