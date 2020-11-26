@@ -1,3 +1,3 @@
-document.write("<h2>Nombre navegador: ");
+document.write("<h1>Nombre navegador: ");
 document.write(infoNavegador.nombre);
-document.write("</h2>");
+document.write("</h1>");
