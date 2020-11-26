@@ -106,7 +106,7 @@ class Calculadora {
 			this.consola = document.getElementById("consola").value;
         }
         catch(err) {
-            document.getElementById("consola").value = "Syntax Error";
+            document.getElementById("consola").value = "Error";
 			this.consola="";
         }  
 	}
