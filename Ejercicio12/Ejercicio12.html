@@ -8,7 +8,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="Ejercicio12.js"></script>
 	</head>	
-	<body>
+	<body onload="ej.crearCanvas()">
 		<h1>Procesamiento de archivos.</h1>
 		<span id="soporte"></span>
 		<input id="cargarArchivos" type="file" name="Archivos" onchange="procesador.procesarArchivos(this.files)" multiple>
