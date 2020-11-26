@@ -1,3 +1,3 @@
-document.write("<h2>Idioma: ")
+document.write("<h2>Idioma: ");
 document.write(infoNavegador.idioma);
-document.write("</h2>")
+document.write("</h2>");
