@@ -1,6 +1,6 @@
 class Tiempo{
     constructor(ciudad){
-        this.apikey = "916176fffd076aab310ca43cf9f17a55";
+        this.apikey = "53d3a5119ea5873177cb6c320d05408a";
         this.ciudad = ciudad;
         this.codigoPais = "ES";
         this.unidades = "&units=metric";

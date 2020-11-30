@@ -1,7 +1,7 @@
 "use strict";
 class CambioMoneda {
     constructor(moneda){
-        this.apikey = "c7b7ee5dc0e0b0eaf20d59f00664d444";
+        this.apikey = "53d3a5119ea5873177cb6c320d05408a";
         this.moneda = moneda;
         this.url = "http://data.fixer.io/api/latest?access_key=" + this.apikey + "&symbols=" + this.moneda + "&format=1";
         this.mensaje = "¡Todo correcto!"
@@ -13,7 +13,7 @@ class CambioMoneda {
         $(insertarAntesDe).before(elemento);
     }
     verDatos(){
-        this.crearElemento("h2","Datos en JSON desde <a href='https://fixer.io'>Fixer.io</a>","footer"); 
+        this.crearElemento("h2","Datos en JSON"); 
         this.crearElemento("h3",this.mensaje,"footer");
         this.crearElemento("h4","JSON","footer");     
         this.crearElemento("pre","","footer");

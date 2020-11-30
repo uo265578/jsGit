@@ -1,0 +1,31 @@
+body{
+    background: #bbccdd;
+	font: 400 15px Tahoma, sans-serif;
+}
+h1{
+    text-align:center;
+    color:black;
+}
+h2{
+    text-align:center;
+    color:black;
+}
+p{
+    color:black;
+	font-size:18px;
+}
+footer{
+   margin-top:2em;
+}
+footer a img{
+	height:31px; 
+	width:88px;
+}
+button{
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
