@@ -63,7 +63,7 @@ class MapaEstaticoGoogle {
         //zoom: 1 (el mundo), 5 (continentes), 10 (ciudad), 15 (calles), 20 (edificios)
         var zoom ="&zoom=15";
         //TamaÃ±o del mapa en pixeles (obligatorio)
-        var tamaÃ±o= "&size=800x600";
+        var tamaño= "&size=800x600";
         //Escala (opcional)
         //Formato (opcional): PNG,JPEG,GIF
         //Tipo de mapa (opcional)
@@ -76,7 +76,7 @@ class MapaEstaticoGoogle {
         //style (opcional)
         var sensor = "&sensor=false"; 
         
-        this.imagenMapa = url + centro + zoom + tamaÃ±o + marcador + sensor + apiKey;
+        this.imagenMapa = url + centro + zoom + tamaño + marcador + sensor + apiKey;
         ubicacion.innerHTML = "<img src='"+this.imagenMapa+"'/>";
     }
 }

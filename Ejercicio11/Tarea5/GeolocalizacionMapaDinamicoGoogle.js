@@ -17,7 +17,7 @@ function initMap(){
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('LocalizaciÃ³n encontrada');
+            infoWindow.setContent('Localización encontrada');
             infoWindow.open(mapaGeoposicionado);
             mapaGeoposicionado.setCenter(pos);
           }, function() {
@@ -32,8 +32,8 @@ function initMap(){
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(browserHasGeolocation ?
-                              'Error: Ha fallado la geolocalizaciÃ³n' :
-                              'Error: Su navegador no soporta geolocalizaciÃ³n');
+                              'Error: Ha fallado la geolocalización' :
+                              'Error: Su navegador no soporta geolocalización');
         infoWindow.open(mapaGeoposicionado);
       }
 
