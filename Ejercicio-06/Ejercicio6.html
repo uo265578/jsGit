@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Calculadora energética</title>
+		<meta name="description" content="Calculadora científica html y js">
+		<meta name="author" content="Santiago Fidalgo Sallés">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="Ejercicio6.css"/>
+		<script src="Ejercicio6.js"></script>
+	</head>
+
+	<body>
+		<h1>Calculadora energética</h1>
+		<main>
+		<p> Calculadora de tipo energética</p>
+			<p>	
+				<input type="text" id="consola" title="consola" disabled=""/>
+			</p>	
+			<p>	
+				<input type="button" class="memory" id="mrc" 	value="Coste medio luz por hora" onclick="calculadora.numero9()"/>
+			</p>	
+			<p>	
+				<input type="button" class="operation" id="cuadrado"  value="Coste medio agua por hora" onclick="calculadora.numero8()"/>
+			</p>	
+			<p>	
+				<input type="button" id="sqrt" class="operation" value="Coste medio calefaccion por hora" onclick="calculadora.numero7()"/>
+	
+			</p>	
+			<p>	
+				<input type="button" id="borrar" class="operation" value="Perdidas media energia por hora" onclick="calculadora.limpiarDisplay()"/>
+			</p>	
+			<p>	
+				<input type="button" id="pi" class="operation" value="Borrar" onclick="calculadora.borrarTodo()"/>
+			</p>
+		</main>
+	</body>
+</html>
