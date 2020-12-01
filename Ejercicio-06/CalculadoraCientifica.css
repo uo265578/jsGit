@@ -1,0 +1,47 @@
+main{
+  display:block;
+  padding:25px;
+  background-color:grey;
+  font: 400 15px Tahoma, sans-serif;
+  width:500px;
+  height:600px;
+  border-radius: 25px;
+}
+
+input[class=memory] {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 15px;
+    min-width: 30%;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 15px 30px;
+    font-size: 15px;
+    margin: 9px 0;
+    border: 1px solid silver;
+    border-radius: 1px;
+    text-align: left;
+    color: #000000;
+    background: #bfcde6;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 15px;
+    min-width: 18%;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #000000;
+}

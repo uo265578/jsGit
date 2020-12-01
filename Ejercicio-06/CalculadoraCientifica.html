@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Calculadora científica</title>
+		<meta name="description" content="Calculadora científica html y js">
+		<meta name="author" content="Santiago Fidalgo Sallés">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css"/>
+		<script src="CalculadoraCientifica.js"></script>
+	</head>
+
+	<body>
+		<h1>Calculadora científica</h1>
+		<main>
+		<p> Calculadora de tipo científica</p>
+			<p>	
+				<input type="text" id="consola" title="consola" disabled=""/>
+			</p>	
+			<p>	
+				<input type="button" class="memory" id="mrc" 	value="mrc" onclick="calculadora.mMostrar()"/>
+				<input type="button" class="memory" id="m-" 	value="m-" onclick="calculadora.mResta()"/>
+				<input type="button" class="memory" id="m+" 	value="m+" onclick="calculadora.mSuma()"/>
+			</p>	
+			<p>	
+				<input type="button" class="operation" id="cuadrado"  value="x&#178;" onclick="calculadora.calculoMath('2')"/>
+				<input type="button" class="operation" id="y"  value="x^y" onclick="calculadora.calculoMath('y')"/>
+				<input type="button" id="sin" 	value="SIN" onclick="calculadora.botonSin()"/>
+				<input type="button" id="cos" 	value="COS" onclick="calculadora.botonCos()"/>
+				<input type="button" id="tan" 	value="TAN" onclick="calculadora.botonTan()"/>
+			</p>	
+			<p>	
+				<input type="button" id="sqrt" class="operation" value="&#8730;" onclick="calculadora.calculoMath('raiz')"/>
+				<input type="button" id="10elev" class="operation" value="10^x" onclick="calculadora.calculoMath('x')"/>
+				<input type="button" id="log" class="operation" value="log" onclick="calculadora.calculoMath('log')"/>
+				<input type="button" id="exponencial" class="operation" value="Exp" onclick="calculadora.calculoMath('e')"/>
+				<input type="button" id="mod" class="operation" value="Mod" onclick="calculadora.agregarDisplay('%')"/>
+			</p>	
+			<p>	
+				<input type="button" id="borrar" class="operation" value="&uarr;" onclick="calculadora.limpiarDisplay()"/>
+				<input type="button" id="borrarParte" class="operation" value="CE" onclick="calculadora.limpiarDisplayParte()"/>
+				<input type="button" id="borrarTodo" class="operation" value="C" onclick="calculadora.limpiarTodo()"/>
+				<input type="button" id="borrarParte2" class="operation" value="&larr;" onclick="calculadora.limpiarDisplayParte()"/>
+				<input type="button" id="div" class="operation" value="/" onclick="calculadora.botonDivision()"/>
+			</p>	
+			<p>	
+				<input type="button" id="pi" class="operation" value="&#928;" onclick="calculadora.agregarDisplay('Math.PI;')"/>
+				<input type="button" id="siete" value="7" onclick="calculadora.numero7()"/>
+				<input type="button" id="ocho" 	value="8" onclick="calculadora.numero8()"/>
+				<input type="button" id="nueve" value="9" onclick="calculadora.numero9()"/>
+				<input type="button" id="mul" 	value="x" onclick="calculadora.botonMultiplicar()"/>
+			</p>
+			<p>	
+				<input type="button" id="factorial" class="operation" value="n!" onclick="calculadora.factorial()"/>
+				<input type="button" id="cuatro" value="4" onclick="calculadora.numero4()"/>
+				<input type="button" id="cinco" value="5" onclick="calculadora.numero5()"/>
+				<input type="button" id="seis" 	value="6" onclick="calculadora.numero6()"/>
+				<input type="button" id="sub" 	value="-" onclick="calculadora.botonResta()"/>
+			</p>	
+			<p>	
+				<input type="button" id="cambiosigno" class="operation" value="&#177;" onclick="calculadora.cambioSigno()"/>
+				<input type="button" id="uno" 	value="1" onclick="calculadora.numero1()"/>
+				<input type="button" id="dos" 	value="2" onclick="calculadora.numero2()"/>
+				<input type="button" id="tres" 	value="3" onclick="calculadora.numero3()"/>
+				<input type="button" id="sum" 	value="+" onclick="calculadora.botonSuma()"/>
+			</p>	
+			<p>	
+				<input type="button" id="parAbrir" class="operation" value="(" onclick="calculadora.agregarDisplay('(')"/>
+				<input type="button" id="parCerrar" class="operation" value=")" onclick="calculadora.agregarDisplay(')')"/>
+				<input type="button" id="cero" class="number" value="0" onclick="calculadora.numero0()"/>
+				<input type="button" id="punto" class="number" value="." onclick="calculadora.agregarPunto()"/>
+				<input type="button" id="igual" class="operation" value="=" onclick="calculadora.calcular()"/>
+			</p>	
+		</main>
+	</body>
+</html>

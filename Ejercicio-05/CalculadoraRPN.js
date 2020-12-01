@@ -149,7 +149,7 @@ class CalculadoraRPN {
     botonPorcent(){
         this.valor=this.stack.peek();
         this.consola=this.valor+"*"+this.consola+"/100";
-        this.consola=eval(this.consola);
+        this.consola=(this.consola);
         this.pintar();
     }
 
@@ -162,20 +162,20 @@ class CalculadoraRPN {
         
         this.valor=this.stack.pop();
         this.consola=String(Math.pow(this.valor,this.consola));
-        this.consola=eval(this.consola);
+        this.consola=(this.consola);
         this.pintar();
     }
 
     inverso(){
         
         this.consola=String("1/"+this.consola);
-        this.consola=eval(this.consola);
+        this.consola=(this.consola);
         this.pintar();
     }
 
     opuesto(){
         this.consola=this.consola+"*(-1)";
-        this.consola=eval(this.consola);
+        this.consola=(this.consola);
         this.pintar();
     }
 	
@@ -186,7 +186,7 @@ class CalculadoraRPN {
 			this.valor=this.stack.pop();
 		}
 		this.consola=String(this.valor+"+"+this.consola);
-		this.consola=eval(this.consola);
+		this.consola=(this.consola);
 		this.pintar();
 	}
 	botonResta(){
@@ -197,7 +197,7 @@ class CalculadoraRPN {
 		}
     
 		this.consola=""+this.valor+"-"+this.consola;
-		this.consola=eval(this.consola);
+		this.consola=(this.consola);
 		this.pintar();
 	}
 	botonMultiplicar(){
@@ -206,7 +206,7 @@ class CalculadoraRPN {
         }else{
             this.valor=this.stack.pop();
             this.consola=String(this.valor+"*"+this.consola);
-            this.consola=eval(this.consola);
+            this.consola=(this.consola);
         }
         
         this.pintar();
@@ -217,7 +217,7 @@ class CalculadoraRPN {
         }else{
             this.valor=this.stack.pop();
             this.consola=String(this.valor+"/"+this.consola);
-            this.consola=eval(this.consola);
+            this.consola=(this.consola);
         }
         
         this.pintar();
