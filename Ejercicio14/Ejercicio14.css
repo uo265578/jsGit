@@ -1,0 +1,18 @@
+body{
+    background: #bbccdd;
+	font: 400 15px Tahoma, sans-serif;
+}
+h1{
+	text-align:center;
+}
+p {
+    text-align: justify;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 500px;
+}
