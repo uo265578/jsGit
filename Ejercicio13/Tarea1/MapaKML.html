@@ -5,14 +5,12 @@
 		<title>Ejercicio 13</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="MapaKML.css"/>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDObZQJjfKi2uNc8zlMu2f6nUxUZF9mKQE"></script>
-		<script src="ProjectedOverlay.js"></script>
 		<script src="MapaKML.js"></script>
 		
 	</head>	
 	<body>
 		<h1>Mapa con archivo KML</h1>
-		<input type="file" id="selArchivos" name="archivos" onChange="mapaEnKml.cargarKml(this.files)">
+		<input type="file" id="selArchivos" title = "Mapa KML" name="archivos" onChange="mapaEnKml.cargarKml(this.files)">
 		<p id="map"></p>
 		<footer>
 			<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!"/></a>
